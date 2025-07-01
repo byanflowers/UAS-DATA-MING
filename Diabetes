@@ -1,0 +1,29 @@
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+
+url = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv'
+
+columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
+           'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
+
+df = pd.read_csv(url, header=None, names=columns)
+
+print("Data awal:")
+print(df.head())
+
+X = df.drop(columns=['Outcome'])
+y = df['Outcome']
+
+scaler = MinMaxScaler()
+normalized_data = scaler.fit_transform(X)
+
+normalized_df = pd.DataFrame(normalized_data, columns=X.columns)
+
+print("\nData setelah normalisasi:")
+print(normalized_df.head())
+
+final_df = normalized_df.copy()
+final_df['Outcome'] = y
+
+print("\nData final (fitur ternormalisasi + target):")
+print(final_df.head())
