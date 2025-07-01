@@ -6,6 +6,7 @@ ADNAN KAHFI BARA (231011400993)
 # 🩺 Analisis Data Mining: Prediksi Penyakit Diabetes Berdasarkan Jurnal Ilmiah
 
 LINK LAPORAN VIDIO YOUTUBE
+https://youtu.be/9jwBeo1Vis4?feature=shared
 
 ## 📌 Pendahuluan
 
