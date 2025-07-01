@@ -1,6 +1,8 @@
 # UAS-DATA-MINING
 04TPLP024
+
 ABYAN SANTOSO (231011402680)
+
 ADNAN KAHFI BARA (231011400993)
 
 # 🩺 Analisis Data Mining: Prediksi Penyakit Diabetes Berdasarkan Jurnal Ilmiah
@@ -13,7 +15,6 @@ https://youtu.be/9jwBeo1Vis4?feature=shared
 Data mining adalah proses penting dalam menganalisis data besar untuk menemukan pola dan informasi tersembunyi.  
 
 Dalam bidang kesehatan, data mining membantu memprediksi risiko penyakit sehingga keputusan medis dapat dibuat lebih cepat dan tepat.
-
 
 
 ## 🎯 Tujuan
@@ -52,7 +53,6 @@ Dataset ini berisi **768 data pasien** dengan atribut:
 Kolom target: `Outcome` (1 = positif diabetes, 0 = negatif diabetes).
 
 
-
 ## ⚙️ Proses Normalisasi
 
 Untuk mempersiapkan data sebelum pemodelan, dilakukan normalisasi agar semua fitur berada di rentang **0–1**.
@@ -89,4 +89,3 @@ normalized_df = pd.DataFrame(normalized_data, columns=X.columns)
 
 print(normalized_df.head())
 
- untuk laporan di atas tolong codingan nyaa di jelasin ama di tambahin laporannya agar tidak terlalu singkat
